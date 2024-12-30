@@ -12,6 +12,10 @@
   --bs-link-hover-color: var(--secondary);
 }
 
+.text-body-primary {
+  color: #11999e;
+}
+
 .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: var(--primary);

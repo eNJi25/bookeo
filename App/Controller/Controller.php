@@ -18,7 +18,8 @@ class Controller
                         break;
                     case 'book':
                         // charger le controller book
-                        echo 'book';
+                        $pageController = new BookController();
+                        $pageController->route();
                         break;
                     default:
                         throw new \Exception("Le contrôleur n'existe pas.");

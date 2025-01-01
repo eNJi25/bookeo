@@ -5,8 +5,11 @@ namespace App\Entity;
 class Book
 {
     protected ?int $id = null;
-    protected string $title;
-    protected string $description;
+    protected string $title = '';
+    protected string $description = '';
+    protected string $image = '';
+    protected int $type_id = 0;
+    protected int $author_id = 0;
 
     /**
      * Get the value of id
@@ -68,4 +71,66 @@ class Book
         return $this;
     }
 
+    /**
+     * Get the value of image
+     * @return string
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * Set the value of image
+     *
+     * @return  self
+     */
+    public function setImage($image): self
+    {
+        $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of type_id
+     * @return int
+     */
+    public function getTypeId()
+    {
+        return $this->type_id;
+    }
+
+    /**
+     * Set the value of type_id
+     *
+     * @return  self
+     */
+    public function setTypeId($type_id): self
+    {
+        $this->type_id = $type_id;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of author_id
+     * @return int
+     */
+    public function getAuthorId()
+    {
+        return $this->author_id;
+    }
+
+    /**
+     * Set the value of author_id
+     *
+     * @return  self
+     */
+    public function setAuthorId($author_id): self
+    {
+        $this->author_id = $author_id;
+
+        return $this;
+    }
 }
